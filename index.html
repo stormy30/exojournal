@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ARTICLE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <!--<img class="col-sm-4 col-sm-offset-4" src="./images/logo2.png" alt="">-->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html">Ajouter un nouvel article</a></li>
+            <li><a href="info.php">Liste des articles</a></li>
+        </ul>
+    </nav>
+
+</header>
+<form action="newarticle.php" method="post" enctype="multipart/form-data">
+
+        <div class="droite col-sm-6 orange">
+            <h2>REDACTION</h2>
+            <p class="remplie">Remplir le formulaire...</p>
+            <div class="formulaire form-group">
+                <input class="form-control" type="text" name="titre" id="titre" placeholder="Titre">
+
+                   <label> Selectionner une image : </label>
+                    <input type="file" name="image" id="fileToUpload" placeholder="Selectionner une image ">
+                    <!--<input type="submit" value="Upload Image" name="submit">-->
+
+                <input class="form-control" type="text" name="article" id="article" placeholder="Article">
+            </div>
+            <p class="remplie">REDIGER VOTRE ARTICLE ET SOUMETTRE!</p>
+            <input type="submit" value="VALIDER L'ARTICLE" id="validation-article">
+        </div>
+
+
+
+</form>
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
+        <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="-->
+        <!--crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<!--<script type="text/javascript" src="./js/script.js"></script>-->
+
+</body>
+</html>
